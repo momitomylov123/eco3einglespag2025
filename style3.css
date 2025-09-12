@@ -1,0 +1,76 @@
+body {
+    background-image: url(/imagenes/fondo4.jpg);
+    background-size: 100%; /* ajusta el tamaño (cover, contain o valores en px/%) */
+    background-position: 80% 15%;
+    h2 {
+      text-align: center;
+      margin: 25px;
+      font-size: 300%;
+    }
+    p {
+      text-align: center;
+      margin: 25px;
+      font-size: 150%;
+    }
+}
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #00000000;
+  width: 290px;
+}
+
+div.gallery-item:hover {
+  border: 2px solid #000000;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+    .button {
+  position: relative;
+  background-color: #ddf74e;
+  border: none;
+  font-size: 28px;
+  color: #000000;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
