@@ -1,0 +1,72 @@
+body {
+    background-image: url(/imagenes/fondo4.jpg);
+    background-size: 100%; 
+
+}
+
+body {
+      margin: 0;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      height: 100vh;
+      background-color: #000000;
+    }
+
+    .contenedor {
+      display: flex;
+      align-items: center; 
+      gap: 20px; 
+      max-width: 800px;
+      background: rgb(177, 143, 98);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contenedor img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .texto {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #000000;
+    }
+    .button {
+  position: relative;
+  /*right: -400px;*/
+  background-color: #5c5b5b91;
+  border: none;
+  font-size: 28px;
+  color: #000000;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #000000;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}

@@ -1,0 +1,71 @@
+body {
+    background-image: url(/imagenes/fondo4.jpg);
+    background-size: 100%; /* ajusta el tamaño (cover, contain o valores en px/%) */
+    background-position: 80% 15%;
+}
+
+body {
+      margin: 0;
+      display: flex;
+      justify-content: center; /* centra el bloque en la pantalla */
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .contenedor {
+      display: flex; /* activa flexbox */
+      align-items: center; /* centra verticalmente imagen y texto */
+      gap: 20px; /* espacio entre imagen y texto */
+      max-width: 800px;
+      background: rgb(0, 0, 0);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contenedor img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .texto {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #ffffff;
+    }
+    .button {
+  position: relative;
+  background-color: #ddf74e;
+  border: none;
+  font-size: 28px;
+  color: #000000;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}

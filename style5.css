@@ -42,7 +42,7 @@ div.gallery-item div.desc {
 }
     .button {
   position: relative;
-  right: -360px;
+  right: -480px;
   background-color: #b8985f;
   border: none;
   font-size: 28px;
@@ -70,42 +70,6 @@ div.gallery-item div.desc {
 }
 
 .button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
-}
-
-    .button2 {
-  position: relative;
-  right: 360px;
-  background-color: #b8985f;
-  border: none;
-  font-size: 28px;
-  color: #000000;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.button2:after {
-  content: "";
-  background: #ffffff;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px !important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s
-}
-
-.button2:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
